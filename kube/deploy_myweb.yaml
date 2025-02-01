@@ -18,7 +18,7 @@ spec:
         app: myweb
     spec:
       containers:
-        - image: aryan5/flaskapp:v5
+        - image: aryan5/flaskapp:v7
         name: flaskapp
         resources: {}
 status: {}
