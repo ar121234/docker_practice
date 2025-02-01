@@ -6,7 +6,7 @@ metadata:
     app: myweb
   name: myweb
 spec:
-  replicas: 3
+  replicas: 7
   selector:
     matchLabels:
       app: myweb
@@ -18,7 +18,7 @@ spec:
         app: myweb
     spec:
       containers:
-      - image: aryan5/flaskapp:v5
+      - image: aryan5/flaskapp:v7
         name: flaskapp
         resources: {}
 status: {}
