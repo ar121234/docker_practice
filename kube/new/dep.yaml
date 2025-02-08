@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: myweb
+  name: myweb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myweb
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: myweb
+    spec:
+      containers:
+      - image: aryan5/new:v4
+        name: new
+        resources: {}
+status: {}
